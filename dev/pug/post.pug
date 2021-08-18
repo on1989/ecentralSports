@@ -1,0 +1,20 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title Test Pug Page
+		link(href="css/main.css" rel="stylesheet")
+		link(link href="https://fonts.googleapis.com/css?family=Lato:400,500,700|Merriweather:400,400i,700|Montserrat:600,800&display=swap" rel="stylesheet")
+		//(if lt IE 9)
+		script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+		script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+		//(endif)
+	body
+		.wrapper
+			include layout/header.pug
+			include layout/post_content.pug
+			include layout/footer.pug
+
+		script(src="js/build.js")
